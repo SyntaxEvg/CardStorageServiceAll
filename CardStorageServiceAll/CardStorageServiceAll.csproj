@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8"></PackageReference>
+		<PackageReference Include="NLog.Web.AspNetCore" Version="5.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\CardStorageService.Data\CardStorageService.Data.csproj" />
+	  <ProjectReference Include="..\CardStorageService.Domain\CardStorageService.Domain.csproj" />
+	  <ProjectReference Include="..\CardStorageService.Interfaces\CardStorageService.Interfaces.csproj" />
+	  <ProjectReference Include="..\CardStorageService.Service\CardStorageService.Service.csproj" />
+	</ItemGroup>
+
+</Project>
