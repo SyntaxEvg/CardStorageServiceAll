@@ -36,9 +36,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson5", "Lesson5", "{A3C3
 		BestApplication\IT Департамент.pfx = BestApplication\IT Департамент.pfx
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertGenerator", "CertGenerator\CertGenerator.csproj", "{11F3EFD8-2A74-4D96-B691-C9FF583B7684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CertGenerator", "CertGenerator\CertGenerator.csproj", "{11F3EFD8-2A74-4D96-B691-C9FF583B7684}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestApplication", "BestApplication\BestApplication.csproj", "{7AEAC544-CEEB-4BA5-91BF-A0C5D14D9614}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestApplication", "BestApplication\BestApplication.csproj", "{7AEAC544-CEEB-4BA5-91BF-A0C5D14D9614}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson6", "Lesson6", "{FE982592-4EF5-4ED3-96D3-304D5F3210D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.TestGrpc", "Web.TestGrps\Web.TestGrpc.csproj", "{A8C80637-E0F1-48A3-BC70-B21FC7964A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardStorageClient", "CardStorageClient\CardStorageClient.csproj", "{CCD2F545-71A1-483C-874C-A7A436C935E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +100,14 @@ Global
 		{7AEAC544-CEEB-4BA5-91BF-A0C5D14D9614}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AEAC544-CEEB-4BA5-91BF-A0C5D14D9614}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AEAC544-CEEB-4BA5-91BF-A0C5D14D9614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C80637-E0F1-48A3-BC70-B21FC7964A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C80637-E0F1-48A3-BC70-B21FC7964A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C80637-E0F1-48A3-BC70-B21FC7964A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C80637-E0F1-48A3-BC70-B21FC7964A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD2F545-71A1-483C-874C-A7A436C935E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD2F545-71A1-483C-874C-A7A436C935E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD2F545-71A1-483C-874C-A7A436C935E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD2F545-71A1-483C-874C-A7A436C935E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +125,8 @@ Global
 		{4C4BB069-4D84-4766-AA00-CB5AAB877E62} = {3AF3EE4D-4DD8-4116-A733-294DFBC19DC6}
 		{11F3EFD8-2A74-4D96-B691-C9FF583B7684} = {A3C3A1E5-3DB9-48F1-8736-67BDAB4F20EA}
 		{7AEAC544-CEEB-4BA5-91BF-A0C5D14D9614} = {A3C3A1E5-3DB9-48F1-8736-67BDAB4F20EA}
+		{A8C80637-E0F1-48A3-BC70-B21FC7964A76} = {FE982592-4EF5-4ED3-96D3-304D5F3210D3}
+		{CCD2F545-71A1-483C-874C-A7A436C935E6} = {FE982592-4EF5-4ED3-96D3-304D5F3210D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99BC4A2A-4A22-41BA-9C4F-E347285B2A99}

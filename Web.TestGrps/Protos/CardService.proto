@@ -1,0 +1,42 @@
+﻿syntax = "proto3";
+import "google/protobuf/duration.proto";  
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "ClientServiceProtos";
+
+package ClientServiceProtos;
+
+service CardService {
+
+	rpc Create (CreateCardRequest) returns (CreateCardResponse);
+	rpc GetByClientId (GetByClientIdRequest) returns (GetByClientIdResponse);
+
+}
+message CreateCardRequest{
+   int32 ClientId =1;
+   string CardNo =2;
+   string Name= 3;
+   string CVV2 =4;
+   google.protobuf.Timestamp ExpDate =5;
+}
+
+message CreateCardResponse{
+    string CardId = 1;
+    int32 ErrorCode = 2;
+    string ErrorMessage = 3;
+}
+message GetByClientIdRequest{
+   string clientId = 1;
+}
+
+message GetByClientIdResponse{
+    repeated CardDtos CardDto= 1;
+    int32 ErrorCode = 2;
+    string ErrorMessage =3;
+}
+message CardDtos{
+   string CardId =1;
+   string CardNo =2;
+   string Name =3;
+   string CVV2 =4;
+   string ExpDate = 5;
+}
