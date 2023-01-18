@@ -42,9 +42,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestApplication", "BestAppl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson6", "Lesson6", "{FE982592-4EF5-4ED3-96D3-304D5F3210D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.TestGrpc", "Web.TestGrps\Web.TestGrpc.csproj", "{A8C80637-E0F1-48A3-BC70-B21FC7964A76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.TestGrpc", "Web.TestGrps\Web.TestGrpc.csproj", "{A8C80637-E0F1-48A3-BC70-B21FC7964A76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardStorageClient", "CardStorageClient\CardStorageClient.csproj", "{CCD2F545-71A1-483C-874C-A7A436C935E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageClient", "CardStorageClient\CardStorageClient.csproj", "{CCD2F545-71A1-483C-874C-A7A436C935E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson7", "Lesson7", "{A5DB2A09-ADEE-4BD5-ABA5-393B25C59EE2}"
+	ProjectSection(SolutionItems) = preProject
+		D:\Users\Admin\Downloads\C# от новичка\Безопасная разработка(Кучма)\FullSearchSamples\FullSearchSamples\data.txt = D:\Users\Admin\Downloads\C# от новичка\Безопасная разработка(Кучма)\FullSearchSamples\FullSearchSamples\data.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullSearch", "FullSearch\FullSearch.csproj", "{9926FCC3-BC30-42BD-BC60-090C2DAFC21B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,6 +115,10 @@ Global
 		{CCD2F545-71A1-483C-874C-A7A436C935E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCD2F545-71A1-483C-874C-A7A436C935E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCD2F545-71A1-483C-874C-A7A436C935E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9926FCC3-BC30-42BD-BC60-090C2DAFC21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9926FCC3-BC30-42BD-BC60-090C2DAFC21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9926FCC3-BC30-42BD-BC60-090C2DAFC21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9926FCC3-BC30-42BD-BC60-090C2DAFC21B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +138,7 @@ Global
 		{7AEAC544-CEEB-4BA5-91BF-A0C5D14D9614} = {A3C3A1E5-3DB9-48F1-8736-67BDAB4F20EA}
 		{A8C80637-E0F1-48A3-BC70-B21FC7964A76} = {FE982592-4EF5-4ED3-96D3-304D5F3210D3}
 		{CCD2F545-71A1-483C-874C-A7A436C935E6} = {FE982592-4EF5-4ED3-96D3-304D5F3210D3}
+		{9926FCC3-BC30-42BD-BC60-090C2DAFC21B} = {A5DB2A09-ADEE-4BD5-ABA5-393B25C59EE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99BC4A2A-4A22-41BA-9C4F-E347285B2A99}
