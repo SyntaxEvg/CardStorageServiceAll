@@ -25,6 +25,9 @@ namespace CardStorageService.Data.Entity
         [Column(TypeName = "datetime2")]
         public DateTime TimeCreated { get; set; }
 
+        /// <summary>
+        /// Время последнего обращения токена
+        /// </summary>
         [Column(TypeName = "datetime2")]
         public DateTime TimeLastRequest { get; set; }
 

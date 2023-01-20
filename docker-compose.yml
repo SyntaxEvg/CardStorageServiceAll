@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+ consul-server:
+  image: consul:latest
+  hostname: "consul-server"
+  ports:
+      - "8500:8500"
+      - "53"
+  volumes:
+      - ./consul/data1:/consul/data
+  command: "agent -server -bootstrap-expect 1 -ui -disable-host-node-id -client 0.0.0.0"
+ consul-client:
+    image: consul:latest
+    hostname: "consul-client"
+    command: "agent -join consul-server -disable-host-node-id"
+    depends_on:
+      - consul-server
+ consul.api.client:
+    image: ${DOCKER_REGISTRY-}consulapiclient
+    build:
+      context: .
+      dockerfile: Consul.Api.Client/Dockerfile
+    depends_on:
+      - consul-client
+ testconsul1:
+    image: ${DOCKER_REGISTRY-}testconsul1
+    build:
+      context: .
+      dockerfile: TestConsul1/Dockerfile
+    depends_on:
+      - consul-client
+ testconsul2:
+    image: ${DOCKER_REGISTRY-}testconsul2
+    build:
+      context: .
+      dockerfile: TestConsul2/Dockerfile
+    depends_on:
+      - testconsul1
+#START
+#docker-compose -f docker-compose.yml up -d
